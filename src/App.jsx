@@ -11,7 +11,7 @@ function App() {
           <div className='mainContent'>
             <ContentSection myContentText="I am Content"/>
           </div>
-          <Footer footerText="Footer Section"/>
+          <Footer footerText="Footer Section" qoute="Quote: 'The only way to do great work is to love what you do.' - Steve Jobs"/>
       </div>
     </>
   )

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Footer = ({footerText}) => {
+const Footer = ({footerText,qoute}) => {
     return (
         <div>
             <h3>{footerText}</h3>
-            <footer className='quote'>Quote: "The only way to do great work is to love what you do." - Steve Jobs</footer>
+            <footer className='quote'>{qoute}</footer>
         </div>
     );
 };
