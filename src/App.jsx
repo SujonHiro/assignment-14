@@ -9,7 +9,7 @@ function App() {
       <div id="container">
           <Header text="Header"/>
           <div className='mainContent'>
-            <ContentSection myContentText="I am Content"/>
+            <ContentSection/>
           </div>
           <Footer footerText="Footer Section" qoute="Quote: 'The only way to do great work is to love what you do.' - Steve Jobs"/>
       </div>

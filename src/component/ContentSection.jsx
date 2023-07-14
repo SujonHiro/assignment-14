@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const ContentSection = () => {
-    const [DisplayText,setDisplayText]=useState('')
-    const [textareaValue,setTextareaValue]=useState('')
+    const [DisplayText,setDisplayText]=useState(null)
+    const [textareaValue,setTextareaValue]=useState(null)
     const handleButtonClick =()=>{
         setDisplayText(textareaValue)
         setTextareaValue('');
