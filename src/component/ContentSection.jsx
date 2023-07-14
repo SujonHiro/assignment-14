@@ -1,0 +1,22 @@
+import React, { useState } from 'react';
+
+const ContentSection = () => {
+    const [DisplayText,setDisplayText]=useState('')
+    const [textareaValue,setTextareaValue]=useState('')
+    const handleButtonClick =()=>{
+        setDisplayText(textareaValue)
+        setTextareaValue('');
+    }
+    const handleTextareaChange = (event) => {
+        setTextareaValue(event.target.value);
+      }; 
+    return (
+        <div>
+            <textarea  cols="40" rows="10" placeholder='Write Your Message Here' value={textareaValue} onChange={handleTextareaChange}></textarea><br/>
+            <button onClick={handleButtonClick}>Display Text</button><br/><br/><br/>
+            <div className="display-text"><strong>Dispay Text: </strong>{DisplayText}</div>
+        </div>
+    );
+};
+
+export default ContentSection;
